@@ -1,0 +1,8 @@
+#!/bin/bash
+
+#Use bashutils to run etest
+# @requires bashutils environment variable BASHUTILS_HOME to be set to where bashutils is installed.
+# This can be done in .bashrc. Example BASHUTILS_HOME=/home/myuser/bashutils
+BASHUTILS=${BASHUTILS_HOME}/share
+echo "${BASHUTILS} ${BASHUTILS_HOME}"
+${BASHUTILS_HOME}/bin/etest --verbose --log_dir "${HOME}/bash_programs/up/testlog" --tests "${HOME}/bash_programs/up/test/up.etest"
