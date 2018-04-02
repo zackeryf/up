@@ -1,0 +1,13 @@
+
+[1m[35m+------------------------------------------------------------------------------+
+|
+| /home/zack/projects/up/test/up.etest:ETEST_up
+|
+| • REPEAT  :: ""
+|
++------------------------------------------------------------------------------+[0m
+[35m[[0m[35mApr 01 20:02:06.446[0m[35m] Calling test[0m
+[1m[32m[[0m[1m[32mApr 01 20:02:07.099[0m[1m[32m] [0m[32m/home/zack/projects/up/test/up.etest:ETEST_up PASSED.
+
+[1m[32m[[0m[1m[32mApr 01 20:02:07.116[0m[1m[32m] [0mFinished testing. 1/1 tests passed in 2 seconds.
+
