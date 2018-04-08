@@ -1,6 +1,34 @@
 #!/bin/bash
 
-ETEST_up()
+setup()
 {
-    return 0
+    test_path=/home/zack/bash_programs/up
+}
+
+ETEST_up_one()
+{
+    cd "${test_path}"
+    exec /home/zack/bash_programs/up/up.sh
+    assert_eq "/home/zack/bash_programs" "$(pwd)"
+}
+
+ETEST_up_two()
+{
+    cd "${test_path}"
+    exec /home/zack/bash_programs/up/up.sh zack
+    assert_eq "/home/zack" "$(pwd)"
+}
+
+ETEST_up_no_dir()
+{
+    cd "${test_path}"
+    exec /home/zack/bash_programs/up/up.sh zck
+    assert_eq "/home/zack/bash_programs/up" "$(pwd)"
+}
+
+ETEST_up_base_path()
+{
+    cd "${test_path}"
+    exec /home/zack/bash_programs/up/up.sh /home/zack
+    assert_eq "/home/zack" "$(pwd)"
 }
