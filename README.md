@@ -1,5 +1,4 @@
 # up
-Bash function to move up the current path to a specified directory.
 
 NAME
     
