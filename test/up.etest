@@ -32,3 +32,19 @@ ETEST_up_base_path()
     exec /home/zack/bash_programs/up/up.sh /home/zack
     assert_eq "/home/zack" "$(pwd)"
 }
+
+ETEST_up_base()
+{
+    test_path=/home/zack/Videos
+    cd "${test_path}"
+    exec /home/zack/bash_programs/up/up.sh
+    assert_eq "/home/zack" "$(pwd)"
+}
+
+ETEST_up_symbolic()
+{
+    test_path=~/Videos
+    cd "${test_path}"
+    exec /home/zack/bash_programs/up/up.sh
+    assert_eq "/home/zack" "$(pwd)"
+}

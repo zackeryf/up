@@ -8,6 +8,7 @@ up()
        cd .. 
        return 0
     fi
+
     #From the current working directory,get the absolute
     #path of up DIR, and drop the rest.
     #So if CWD is /home/user/programs/program1/src
@@ -17,9 +18,12 @@ up()
     #behavior. Looking for DIR/, once DIR/ is found everything that
     #matched * will be thrown away. Remember it is searching from the
     #end of the string.
+
     BASE=${CWD%*${DIR}/*}
+
     #cd to base via absolute path
     cd ${BASE}
+
     #cd to the directory
     cd ${DIR}
 }
