@@ -8,4 +8,9 @@
 BASHUTILS_HOME=${HOME}/bashutils
 
 BASHUTILS=${BASHUTILS_HOME}/share
+
+if [[ ! -e ${HOME}/bash_programs/up/test/test_logs ]]; then
+    mkdir ${HOME}/bash_programs/up/test/test_logs
+fi
+
 ${BASHUTILS_HOME}/bin/etest --verbose --log_dir ${HOME}/bash_programs/up/test/test_logs ${HOME}/bash_programs/up/test/up.etest
