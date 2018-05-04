@@ -22,8 +22,8 @@ up()
     BASE=${CWD%*${DIR}/*}
 
     #cd to base via absolute path
-    exec cd ${BASE}
+    cd ${BASE}
 
     #cd to the directory
-    exec cd ${DIR}
+    cd ${DIR}
 }
