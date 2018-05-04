@@ -5,7 +5,7 @@
 # This can be done in .bashrc. Example BASHUTILS_HOME=/home/myuser/bashutils
 # I am just going to set it here
 
-BASHUTILS_HOME=/home/zack/bashutils
+BASHUTILS_HOME=${HOME}/bashutils
 
 BASHUTILS=${BASHUTILS_HOME}/share
 ${BASHUTILS_HOME}/bin/etest --verbose --log_dir ${HOME}/bash_programs/up/test/test_logs ${HOME}/bash_programs/up/test/up.etest
