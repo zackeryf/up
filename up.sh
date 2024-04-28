@@ -1,4 +1,5 @@
 #!/bin/bash
+set -o errexit
 
 up()
 {
@@ -22,8 +23,8 @@ up()
     BASE=${CWD%*${DIR}/*}
 
     #cd to base via absolute path
-    cd ${BASE}
+    cd "${BASE}"
 
     #cd to the directory
-    cd ${DIR}
+    cd "${DIR}"
 }
